@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Titulo de Prueba</h1>
-    <p>Probando mi pagina de prueba</p>
-    <textarea name="mensaje" id="mensaje" maxlength="150" placeholder="Escribe tu mensaje secreto"></textarea>
-    <br>
-    <input type="desplazamiento" type="number" placeholder="Ingresa tu clave aqui">
-    <button id="cifrar" type="button">cifrar</button>
-    <button id="descifrar" type="button">descifrar</button>
+    <div class="presentacion">
+         <h1 class="titulo1">HIDDEN CODE</h1>
+         <p>Probando mi pagina de prueba</p>
+         <textarea name="mensaje" id="mensaje" maxlength="150" placeholder="Escribe tu mensaje secreto"></textarea>
+         <br>
+         <span id="counter">0/150</span>
+    </div>
+    
+    <div class="clave">
+        <p>Clave secreta</p>
+        <input id="desplazamiento" type="number" placeholder="Ingresa tu clave aqui">
+    </div>
     <div id="resultado">
+    </div>
+
+    <div class="botones">
+    <button id="cifrar" type="button">
+        <i class="fas fa-lock"></i>cifrar
+    </button>
+    <button id="descifrar" type="button">
+        <i class="fas fa-lock-open"></i>descifrar</button>
+    
 
     </div>
     <script src="js/script.js" type="module"></script>
