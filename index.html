@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="presentacion">
@@ -17,19 +18,24 @@
     
     <div class="clave">
         <p>Clave secreta</p>
-        <input id="desplazamiento" type="number"  class="clave1" placeholder="Ingresa tu clave aqui">
+        <input id="desplazamiento" type="number"  class="clave1" placeholder="Ingresa tu clave secreta aqui">
     </div>
     <div id="resultado" class="resultado1">
     </div>
-
+     <br>
     <div class="botones">
     <button class="boton1" id="cifrar" type="button">
-        <i class="fas fa-lock"></i>cifrar
+        <i class="fa-solid fa-lock"></i>cifrar
     </button>
     <button class="boton2" id="descifrar" type="button">
-        <i class="fas fa-lock-open"></i>descifrar</button>
+        <i class="fa-solid fa-unlock"></i> descifrar</button>
     
 
+    </div>
+    <div id="mymodal" class="modal">
+        <div class="modalContenido">
+            <span class="close">&times;</span>
+        </div>
     </div>
     <script src="js/script.js" type="module"></script>
     <script src="js/cifrado.js" type="module"></script>

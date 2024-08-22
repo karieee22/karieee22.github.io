@@ -14,8 +14,10 @@ boton_cifrar.addEventListener("click",()=>{
         let texto = "" ;
         let textoCifrado = descifrado_cifrado(mensaje.value,desplazamiento.value,1);
         texto += "El mensaje cifrado es: "
-        texto += textoCifrado
-        document.getElementById("resultado").innerHTML = texto;
+        texto += textoCifrado;
+        document.getElementsByClassName("modalContenido")[0].innerHTML += texto;
+        document.getElementById("mymodal").style.display ="block";
+       /* document.getElementById("resultado").innerHTML = texto;*/
     }
 })
 
@@ -29,6 +31,17 @@ boton_descifrar.addEventListener("click",()=>{
         let textoCifrado = descifrado_cifrado(mensaje.value,desplazamiento.value,0);
         texto += "El mensaje cifrado es: "
         texto += textoCifrado
-        document.getElementById("resultado").innerHTML = texto;
+        document.getElementsByClassName("modalContenido")[0].innerHTML += texto;
+        document.getElementById("mymodal").style.display ="block";
+        /*document.getElementById("resultado").innerHTML = texto;*/
     }
 })
+
+    document.getElementsByClassName("close")[0].onclick = function(){
+    document.getElementById("mymodal").style.display = "none";
+    }
+     window.onclick = function(event){  
+    if(event.target == document.getElementById("mymodal")){
+        document.getElementById("mymodal").style.display = "none";
+    }
+   }
